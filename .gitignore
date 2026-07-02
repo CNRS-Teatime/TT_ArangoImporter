@@ -1,0 +1,16 @@
+.DS_STORE
+data/*
+!data/test
+.pytest_cache
+.mypy_cache
+.idea
+__pycache__
+config/
+!config/config-graph-BOILERPLATE.json
+!config/config-thesaurus-BOILERPLATE.json
+!config/graph-config-schema.json
+!config/theso-config-schema.json
+!config/config-graph-xp.json
+*.log
+.venv
+.env
