@@ -1,0 +1,254 @@
+source,key,description,W7,W7 Question Mistral,W7 Mistral V2,
+merimee,REF,Référence de la notice,What,What,What,"La description 'Référence de la notice' fait référence à un objet, un titre ou une référence."
+merimee,DPT,Code du département au moment de la protection ou de l’étude,Where,Where,Where,La description 'Code du département au moment de la protection ou de l’étude' fait référence à un lieu (département).
+merimee,TICO,Titre courant,What,What,What,"La description 'Titre courant' fait référence à un objet, un titre ou une référence."
+merimee,APPL,Appellation d'usage,What,What,What,"La description 'Appellation d'usage' fait référence à un objet, un titre ou une référence."
+merimee,DENO,Dénomination de l'édifice,What,What,What,"La description 'Dénomination de l'édifice' fait référence à un objet, un titre ou une référence."
+merimee,PDEN,Précision sur la typologie de l'édifice,What,What,What,La description 'Précision sur la typologie de l'édifice' fait référence à un type ou une typologie.
+merimee,GENR,Qualité des personnes pour qui l'édifice a été construit ou transformé,Who,Who,Who,La description 'Qualité des personnes pour qui l'édifice a été construit ou transformé' fait référence à une personne ou un acteur.
+merimee,VOCA,"Vocable, pour les édifices cultuels",What,What,What,"La description 'Vocable, pour les édifices cultuels' fait référence à un objet, un titre ou une référence."
+merimee,ACTU,Destination actuelle de l'édifice,Where,Where,What,La description 'Destination actuelle de l'édifice' fait référence à un lieu (destination).
+merimee,MOSA,Édition d'une mosaïque d'images,Which,What,Which,La description 'Édition d'une mosaïque d'images' fait référence à un objet (mosaïque).
+merimee,COLL,Nombre d'édifices concernés par l'étude,What,What,What,La description 'Nombre d'édifices concernés par l'étude' fait référence à une quantité (nombre).
+merimee,PLOC,Précision sur la localisation,Where,Where,Where,La description 'Précision sur la localisation' fait référence à un lieu ou une localisation.
+merimee,AIRE,Aire d'étude pour le domaine de l'Inventaire,Where,Where,Where,La description 'Aire d'étude pour le domaine de l'Inventaire' fait référence à un lieu ou une localisation.
+merimee,CANT,Canton,Where,Where,Where,La description 'Canton' fait référence à un lieu ou une localisation.
+merimee,LIEU,Lieu-dit,Where,Where,Where,La description 'Lieu-dit' fait référence à un lieu ou une localisation.
+merimee,ADRS,Adresse de l'édifice,Where,Where,Where,La description 'Adresse de l'édifice' fait référence à un lieu ou une localisation.
+merimee,CADA,Références cadastrales,"What, Where",What,What,"La description 'Références cadastrales' fait référence à un objet, un titre ou une référence."
+merimee,IMPL,Milieu d'implantation pour le domaine de l'Inventaire,Where,Where,Where,La description 'Milieu d'implantation pour le domaine de l'Inventaire' fait référence à un lieu ou une localisation.
+merimee,HYDR,Nom du cours d'eau traversant ou bordant l'édifice,Where,What,Where,"La description 'Nom du cours d'eau traversant ou bordant l'édifice' fait référence à un objet, un titre ou une référence."
+merimee,PARN,Partie constituante non étudiée,What,What,What,"Par défaut, la description 'Partie constituante non étudiée' est associée à 'What' (objet/référence)."
+merimee,EDIF,Nom de l'édifice,What,What,What,"La description 'Nom de l'édifice' fait référence à un objet, un titre ou une référence."
+merimee,POP_COORDONNEES.LAT,POP_COORDONNEES.LAT,Where,What,What,"Par défaut, la description 'POP_COORDONNEES.LAT' est associée à 'What' (objet/référence)."
+merimee,POP_COORDONNEES.LON,POP_COORDONNEES.LON,Where,What,What,"Par défaut, la description 'POP_COORDONNEES.LON' est associée à 'What' (objet/référence)."
+merimee,DPT_ACTU,Département actuel,Where,Where,Where,La description 'Département actuel' fait référence à un lieu ou une localisation.
+merimee,COM_ACTU,Commune actuelle,Where,Where,Where,La description 'Commune actuelle' fait référence à un lieu ou une localisation.
+merimee,WEB,Code INSEE de la commune actuelle,Where,What,Where,"La description 'Code INSEE de la commune actuelle' fait référence à un objet, un titre ou une référence."
+merimee,SCLE,Siècle de campagne principale de construction,When,When,When,La description 'Siècle de campagne principale de construction' fait référence à une date ou une période.
+merimee,SCLD,Siècle de campagne secondaire de construction,When,Where,Where,La description 'Siècle de campagne secondaire de construction' fait référence à un lieu ou une localisation.
+merimee,DATE,Année(s) de(s) campagne(s) de construction,When,When,When,La description 'Année(s) de(s) campagne(s) de construction' fait référence à une date ou une période.
+merimee,JDAT,Commentaire concernant la datation,"When, How",Where,Where,La description 'Commentaire concernant la datation' fait référence à un lieu ou une localisation.
+merimee,AUTR,Auteur de l'édifice,Who,Who,Who,La description 'Auteur de l'édifice' fait référence à une personne ou un acteur.
+merimee,REFM,Référence de la base MARQ,What,What,What,"La description 'Référence de la base MARQ' fait référence à un objet, un titre ou une référence."
+merimee,JATT,Commentaire concernant l'attribution de l'édifice,"What, How",Where,Where,La description 'Commentaire concernant l'attribution de l'édifice' fait référence à un lieu ou une localisation.
+merimee,PERS,Personnalité liée à l'histoire de l'édifice,Who,What,What,"Par défaut, la description 'Personnalité liée à l'histoire de l'édifice' est associée à 'What' (objet/référence)."
+merimee,REMP,Remploi,What,What,What,"Par défaut, la description 'Remploi' est associée à 'What' (objet/référence)."
+merimee,DEPL,Lieu de conservation d'un élément architectural déplacé,Where,Where,Where,La description 'Lieu de conservation d'un élément architectural déplacé' fait référence à un lieu ou une localisation.
+merimee,HIST,Description historique,What,What,What,"Par défaut, la description 'Description historique' est associée à 'What' (objet/référence)."
+merimee,MURS,Matériaux du gros-œuvre,How,What,What,"Par défaut, la description 'Matériaux du gros-œuvre' est associée à 'What' (objet/référence)."
+merimee,TOIT,Matériaux de la couverture ,How,What,What,"Par défaut, la description 'Matériaux de la couverture ' est associée à 'What' (objet/référence)."
+merimee,PLAN,Typologie de plan,What,What,What,"La description 'Typologie de plan' fait référence à un objet, un titre ou une référence."
+merimee,ETAG,Description de l'élévation intérieure,What,What,What,"Par défaut, la description 'Description de l'élévation intérieure' est associée à 'What' (objet/référence)."
+merimee,VOUT,Typologie du couvrement,What,What,What,"La description 'Typologie du couvrement' fait référence à un objet, un titre ou une référence."
+merimee,ELEV,Partie d'élévation extérieure,What,What,What,"Par défaut, la description 'Partie d'élévation extérieure' est associée à 'What' (objet/référence)."
+merimee,COUV,Typologie de la couverture,What,What,What,"La description 'Typologie de la couverture' fait référence à un objet, un titre ou une référence."
+merimee,ESCA,"Emplacement, forme et structure de l'escalier","What, How",What,What,"Par défaut, la description 'Emplacement, forme et structure de l'escalier' est associée à 'What' (objet/référence)."
+merimee,ENER,Source de l'énergie utilisée par l'édifice,What,What,What,"Par défaut, la description 'Source de l'énergie utilisée par l'édifice' est associée à 'What' (objet/référence)."
+merimee,VERT,Couverts ou découverts du jardin de l'édifice,What,What,What,"Par défaut, la description 'Couverts ou découverts du jardin de l'édifice' est associée à 'What' (objet/référence)."
+merimee,DESC,Commentaire descriptif de l'édifice,What,Where,Where,La description 'Commentaire descriptif de l'édifice' fait référence à un lieu ou une localisation.
+merimee,TECH,Technique du décor porté de l'édifice,How,How,How,La description 'Technique du décor porté de l'édifice' fait référence à une méthode ou un processus.
+merimee,REPR,Indexation iconographique,What,What,What,"Par défaut, la description 'Indexation iconographique' est associée à 'What' (objet/référence)."
+merimee,PREP,Description de l'iconographie,"What, How",What,What,"Par défaut, la description 'Description de l'iconographie' est associée à 'What' (objet/référence)."
+merimee,DIMS,Dimensions normalisées des édicules,What,What,What,"Par défaut, la description 'Dimensions normalisées des édicules' est associée à 'What' (objet/référence)."
+merimee,TYPO,Commentaire d'usage régional,What,Where,Where,La description 'Commentaire d'usage régional' fait référence à un lieu ou une localisation.
+merimee,ETAT,État de conservation,What,What,What,"Par défaut, la description 'État de conservation' est associée à 'What' (objet/référence)."
+merimee,DENQ,Date de l'enquête ou du récolement,When,When,When,La description 'Date de l'enquête ou du récolement' fait référence à une date ou une période.
+merimee,PROT,Nature de la protection de l'édifice,What,What,What,"Par défaut, la description 'Nature de la protection de l'édifice' est associée à 'What' (objet/référence)."
+merimee,DPRO,Date et niveau de protection de l'édifice,What,When,When,La description 'Date et niveau de protection de l'édifice' fait référence à une date ou une période.
+merimee,PPRO,Précision sur la protection,What,What,What,"Par défaut, la description 'Précision sur la protection' est associée à 'What' (objet/référence)."
+merimee,APRO,Nature de l'acte de protection,How,What,What,"Par défaut, la description 'Nature de l'acte de protection' est associée à 'What' (objet/référence)."
+merimee,MHPP,Précision sur les éléments protégés,What,What,What,"Par défaut, la description 'Précision sur les éléments protégés' est associée à 'What' (objet/référence)."
+merimee,SITE,Typologie de la zone de protection,What,What,What,"La description 'Typologie de la zone de protection' fait référence à un objet, un titre ou une référence."
+merimee,INTE,Intérêt de l'édifice,Why,What,What,"Par défaut, la description 'Intérêt de l'édifice' est associée à 'What' (objet/référence)."
+merimee,PINT,Intérêt de l'œuvre,Why,What,What,"Par défaut, la description 'Intérêt de l'œuvre' est associée à 'What' (objet/référence)."
+merimee,REMA,Élément remarquable dans l'édifice,Why,What,What,"Par défaut, la description 'Élément remarquable dans l'édifice' est associée à 'What' (objet/référence)."
+merimee,LABEL,Label,What,What,What,"Par défaut, la description 'Label' est associée à 'What' (objet/référence)."
+merimee,DLAB,Date de label,When,When,When,La description 'Date de label' fait référence à une date ou une période.
+merimee,OBS,Observation concernant la protection de l'édifice,"Why, What",What,What,"Par défaut, la description 'Observation concernant la protection de l'édifice' est associée à 'What' (objet/référence)."
+merimee,STAT,Statut juridique du propriétaire,Who,Who,Who,La description 'Statut juridique du propriétaire' fait référence à une personne ou un acteur.
+merimee,PSTA,Précision sur le statut juridique du propriétaire,Who,Who,Who,La description 'Précision sur le statut juridique du propriétaire' fait référence à une personne ou un acteur.
+merimee,AFFE,Affectataire de l'édifice,Who,Where,Where,La description 'Affectataire de l'édifice' fait référence à un lieu ou une localisation.
+merimee,PAFF,Précision concernant l'affectataire de l'édifice,Who,Where,Where,La description 'Précision concernant l'affectataire de l'édifice' fait référence à un lieu ou une localisation.
+merimee,THEM,Thème de l'étude,WHY,What,What,"Par défaut, la description 'Thème de l'étude' est associée à 'What' (objet/référence)."
+merimee,ETUD,Cadre de l'étude,WHY,What,What,"Par défaut, la description 'Cadre de l'étude' est associée à 'What' (objet/référence)."
+merimee,DOSS,Typologie du dossier,What,What,What,"La description 'Typologie du dossier' fait référence à un objet, un titre ou une référence."
+merimee,DBOR,Date de rédaction de la notice,When,When,When,La description 'Date de rédaction de la notice' fait référence à une date ou une période.
+merimee,COPY,Mentions légales,Who,What,What,"Par défaut, la description 'Mentions légales' est associée à 'What' (objet/référence)."
+merimee,SOUR,Source,What,What,What,"Par défaut, la description 'Source' est associée à 'What' (objet/référence)."
+merimee,DOSADRS,Adresse de conservation et consultation du dossier,Where,Where,Where,La description 'Adresse de conservation et consultation du dossier' fait référence à un lieu ou une localisation.
+merimee,DMIS,Date de création de la notice,When,When,When,La description 'Date de création de la notice' fait référence à une date ou une période.
+merimee,DMOIS,Date de moissonnage de la notice,When,When,When,La description 'Date de moissonnage de la notice' fait référence à une date ou une période.
+merimee,DMAJ,Date de dernière modification de la notice,When,When,When,La description 'Date de dernière modification de la notice' fait référence à une date ou une période.
+merimee,NOMS,Rédacteur de la notice,Who,What,What,"Par défaut, la description 'Rédacteur de la notice' est associée à 'What' (objet/référence)."
+merimee,RENV,Renvoi vers un autre producteur Mérimée,Who,Who,Who,La description 'Renvoi vers un autre producteur Mérimée' fait référence à une personne ou un acteur.
+merimee,REFMUS,Référence Muséofile associée,What,What,What,"La description 'Référence Muséofile associée' fait référence à un objet, un titre ou une référence."
+merimee,REFO,Référence Palissy associée,What,What,What,"La description 'Référence Palissy associée' fait référence à un objet, un titre ou une référence."
+merimee,REFJOC,Référence Joconde associée,What,What,What,"La description 'Référence Joconde associée' fait référence à un objet, un titre ou une référence."
+merimee,REFP,Référence des parties constituantes associées,What,What,What,"La description 'Référence des parties constituantes associées' fait référence à un objet, un titre ou une référence."
+merimee,REFE,Référence de l'ensemble constitué associé,What,What,What,"La description 'Référence de l'ensemble constitué associé' fait référence à un objet, un titre ou une référence."
+merimee,REG,Région au moment de la protection ou de l’étude,Where,Where,Where,La description 'Région au moment de la protection ou de l’étude' fait référence à un lieu ou une localisation.
+merimee,DPT_LETTRE,Département en lettres au moment de la protection ou de l’étude,Where,Where,Where,La description 'Département en lettres au moment de la protection ou de l’étude' fait référence à un lieu ou une localisation.
+merimee,COM,Commune au moment de la protection ou de l’étude,Where,Where,Where,La description 'Commune au moment de la protection ou de l’étude' fait référence à un lieu ou une localisation.
+merimee,WCOM,Commune pour l'affichage,Where,Where,Where,La description 'Commune pour l'affichage' fait référence à un lieu ou une localisation.
+merimee,WADRS,Adresse pour l'affichage,Where,Where,Where,La description 'Adresse pour l'affichage' fait référence à un lieu ou une localisation.
+merimee,custom_PRODUCTEUR_LABEL,Producteur,Who,Who,Who,La description 'Producteur' fait référence à une personne ou un acteur.
+merimee,custom_LOCA,Localisation,Who,Where,Where,La description 'Localisation' fait référence à un lieu ou une localisation.
+palissy,REF,Référence de la notice,What,What,What,"La description 'Référence de la notice' fait référence à un objet, un titre ou une référence."
+palissy,DPT,Code du département au moment de la protection ou de l’étude,Where,Where,Where,La description 'Code du département au moment de la protection ou de l’étude' fait référence à un lieu (département).
+palissy,INSEE,Code INSEE de la commune,Where,What,Where,"La description 'Code INSEE de la commune' fait référence à un objet, un titre ou une référence."
+palissy,TICO,Titre figurant dans l'arrêté ou l'étude,What,What,What,"La description 'Titre figurant dans l'arrêté ou l'étude' fait référence à un objet, un titre ou une référence."
+palissy,APPL,Appellation d'usage,What,What,What,"La description 'Appellation d'usage' fait référence à un objet, un titre ou une référence."
+palissy,DENO,Dénomination de l'objet,What,What,What,"La description 'Dénomination de l'objet' fait référence à un objet, un titre ou une référence."
+palissy,PDEN,Précision sur la typologie de l'objet,What,What,What,La description 'Précision sur la typologie de l'objet' fait référence à un type ou une typologie.
+palissy,IMAGE,Nombre d'objets,Which,What,What,"La description 'Nombre d'objets' fait référence à un objet, un titre ou une référence."
+palissy,NART,Numéro artificiel de différenciation reporté sur l'objet,Which,What,What,"Par défaut, la description 'Numéro artificiel de différenciation reporté sur l'objet' est associée à 'What' (objet/référence)."
+palissy,AIRE,Aire d'étude,Where,Where,Where,La description 'Aire d'étude' fait référence à un lieu ou une localisation.
+palissy,IMPL,Milieu d'implémentation (Inventaire),Where,Where,Where,La description 'Milieu d'implémentation (Inventaire)' fait référence à un lieu ou une localisation.
+palissy,CANT,Canton,Where,Where,Where,La description 'Canton' fait référence à un lieu ou une localisation.
+palissy,LIEU,Lieu-dit,Where,Where,Where,La description 'Lieu-dit' fait référence à un lieu ou une localisation.
+palissy,PLOC,Précision sur la localisation,Where,Where,Where,La description 'Précision sur la localisation' fait référence à un lieu ou une localisation.
+palissy,EMPL,Emplacement de l'œuvre dans l'édifice,Where,What,What,"Par défaut, la description 'Emplacement de l'œuvre dans l'édifice' est associée à 'What' (objet/référence)."
+palissy,POP_COORDONNEES.LAT,POP_COORDONNEES.LAT,Where,What,What,"Par défaut, la description 'POP_COORDONNEES.LAT' est associée à 'What' (objet/référence)."
+palissy,POP_COORDONNEES.LON,POP_COORDONNEES.LON,Where,What,What,"Par défaut, la description 'POP_COORDONNEES.LON' est associée à 'What' (objet/référence)."
+palissy,REG_ACTU,Région actuelle,Where,Where,Where,La description 'Région actuelle' fait référence à un lieu ou une localisation.
+palissy,DPT_ACTU,Département actuel,Where,Where,Where,La description 'Département actuel' fait référence à un lieu ou une localisation.
+palissy,WEB,Code INSEE de la commune actuelle (MH),Where,What,Where,"La description 'Code INSEE de la commune actuelle (MH)' fait référence à un objet, un titre ou une référence."
+palissy,MOSA,Édifice actuel de conservation,Where,What,Which,"Par défaut, la description 'Édifice actuel de conservation' est associée à 'What' (objet/référence)."
+palissy,DEPL,Lieu de déplacement de l'objet,Where,Where,Where,La description 'Lieu de déplacement de l'objet' fait référence à un lieu ou une localisation.
+palissy,MANQUANT,Statut juridique de l'objet,What,What,What,"Par défaut, la description 'Statut juridique de l'objet' est associée à 'What' (objet/référence)."
+palissy,VOLS,Informations relatives aux vols,What,What,What,"Par défaut, la description 'Informations relatives aux vols' est associée à 'What' (objet/référence)."
+palissy,DOMN,Domaine,"What, Which",What,What,"Par défaut, la description 'Domaine' est associée à 'What' (objet/référence)."
+palissy,CATE,Catégorie technique,"What, How",How,How,La description 'Catégorie technique' fait référence à une méthode ou un processus.
+palissy,STRU,Structure et typologie,What,What,What,"La description 'Structure et typologie' fait référence à un objet, un titre ou une référence."
+palissy,MATR,Matériaux et techniques d'intervention,How,How,How,La description 'Matériaux et techniques d'intervention' fait référence à une méthode ou un processus.
+palissy,DESC,Description matérielle,What,What,What,"Par défaut, la description 'Description matérielle' est associée à 'What' (objet/référence)."
+palissy,SCLD,"Époque, mouvement, style",When,What,What,"Par défaut, la description 'Époque, mouvement, style' est associée à 'What' (objet/référence)."
+palissy,REPR,Indexation iconographique,What,What,What,"Par défaut, la description 'Indexation iconographique' est associée à 'What' (objet/référence)."
+palissy,PREP,Description de l'iconographie,What,What,What,"Par défaut, la description 'Description de l'iconographie' est associée à 'What' (objet/référence)."
+palissy,DIMS,Dimensions normalisées (en cm),What,What,What,"Par défaut, la description 'Dimensions normalisées (en cm)' est associée à 'What' (objet/référence)."
+palissy,PDIM,Précision sur les dimensions,What,What,What,"Par défaut, la description 'Précision sur les dimensions' est associée à 'What' (objet/référence)."
+palissy,ETAT,État de conservation,What,What,What,"Par défaut, la description 'État de conservation' est associée à 'What' (objet/référence)."
+palissy,PETA,Précision sur l'état de conservation,What,What,What,"Par défaut, la description 'Précision sur l'état de conservation' est associée à 'What' (objet/référence)."
+palissy,DENQ,Date de l'enquête ou du récolement,When,When,When,La description 'Date de l'enquête ou du récolement' fait référence à une date ou une période.
+palissy,INSC,Inscription,What,What,What,"Par défaut, la description 'Inscription' est associée à 'What' (objet/référence)."
+palissy,PINS,Précision sur l'inscription,What,What,What,"Par défaut, la description 'Précision sur l'inscription' est associée à 'What' (objet/référence)."
+palissy,SCLE,Siècle de création (partie de siècle ou époque),When,When,When,La description 'Siècle de création (partie de siècle ou époque)' fait référence à une date ou une période.
+palissy,DATE,Année de création,When,When,When,La description 'Année de création' fait référence à une date ou une période.
+palissy,JDAT,Justification de la datation,"How, Why",What,What,"Par défaut, la description 'Justification de la datation' est associée à 'What' (objet/référence)."
+palissy,ATEL,Personne morale créatrice de l'objet,Who,Who,Who,La description 'Personne morale créatrice de l'objet' fait référence à une personne ou un acteur.
+palissy,EXEC,Lieu de création,Where,Where,Where,La description 'Lieu de création' fait référence à un lieu ou une localisation.
+palissy,ORIG,Lieu de provenance,Where,Where,Where,La description 'Lieu de provenance' fait référence à un lieu ou une localisation.
+palissy,STAD,Stade de création,Which,What,What,"Par défaut, la description 'Stade de création' est associée à 'What' (objet/référence)."
+palissy,AUTR,Auteur de l'œuvre ou créateur de l'objet,Who,Who,Who,La description 'Auteur de l'œuvre ou créateur de l'objet' fait référence à une personne ou un acteur.
+palissy,ROLE,Rôle (auteur),Who,Who,Who,La description 'Rôle (auteur)' fait référence à une personne ou un acteur.
+palissy,AFIG,Auteur du projet,Who,Who,Who,La description 'Auteur du projet' fait référence à une personne ou un acteur.
+palissy,PERS,Personnalité liée à l'histoire de l'objet,Who,What,What,"Par défaut, la description 'Personnalité liée à l'histoire de l'objet' est associée à 'What' (objet/référence)."
+palissy,HIST,Description historique,"What, When",What,What,"Par défaut, la description 'Description historique' est associée à 'What' (objet/référence)."
+palissy,STAT,Statut juridique du propriétaire,Who,Who,Who,La description 'Statut juridique du propriétaire' fait référence à une personne ou un acteur.
+palissy,ACQU,Contexte d'acquisition,How,What,What,"Par défaut, la description 'Contexte d'acquisition' est associée à 'What' (objet/référence)."
+palissy,PROT,Typologie de la protection,How,What,What,"La description 'Typologie de la protection' fait référence à un objet, un titre ou une référence."
+palissy,NUMA,Numéro de l'arrêté de protection,What,What,What,"Par défaut, la description 'Numéro de l'arrêté de protection' est associée à 'What' (objet/référence)."
+palissy,DPRO,Date et typologie de la protection,"What, When",What,When,"La description 'Date et typologie de la protection' fait référence à un objet, un titre ou une référence."
+palissy,PPRO,Précision sur la protection,How,What,What,"Par défaut, la description 'Précision sur la protection' est associée à 'What' (objet/référence)."
+palissy,OBS,Observations,What,What,What,"Par défaut, la description 'Observations' est associée à 'What' (objet/référence)."
+palissy,INTE,Intérêt de l'objet,Why,What,What,"Par défaut, la description 'Intérêt de l'objet' est associée à 'What' (objet/référence)."
+palissy,PINT,Précision sur l’intérêt de l'œuvre,Why,What,What,"Par défaut, la description 'Précision sur l’intérêt de l'œuvre' est associée à 'What' (objet/référence)."
+palissy,PRECISION_JURIDIQUE,Précision sur le statut juridique,What,What,What,"Par défaut, la description 'Précision sur le statut juridique' est associée à 'What' (objet/référence)."
+palissy,THEM,Thème de l'étude,WHY,What,What,"Par défaut, la description 'Thème de l'étude' est associée à 'What' (objet/référence)."
+palissy,ETUD,Cadre de l'étude,WHY,What,What,"Par défaut, la description 'Cadre de l'étude' est associée à 'What' (objet/référence)."
+palissy,DOSS,Type de dossier,What,What,What,"La description 'Type de dossier' fait référence à un objet, un titre ou une référence."
+palissy,DBOR,Date de rédaction de la notice,When,When,When,La description 'Date de rédaction de la notice' fait référence à une date ou une période.
+palissy,SOUR,Sources d'archives,What,What,What,"Par défaut, la description 'Sources d'archives' est associée à 'What' (objet/référence)."
+palissy,EXPO,Exposition,Where,What,What,"Par défaut, la description 'Exposition' est associée à 'What' (objet/référence)."
+palissy,BIBL,Publications,Where,What,What,"Par défaut, la description 'Publications' est associée à 'What' (objet/référence)."
+palissy,PHOTO,Photographies liées au dossier de protection,What,What,What,"Par défaut, la description 'Photographies liées au dossier de protection' est associée à 'What' (objet/référence)."
+palissy,DOSADRS,Adresse de conservation et consultation du dossier,Where,Where,Where,La description 'Adresse de conservation et consultation du dossier' fait référence à un lieu ou une localisation.
+palissy,DMIS,Date de création de la notice,When,When,When,La description 'Date de création de la notice' fait référence à une date ou une période.
+palissy,DMOIS,Date de moissonnage de la notice,When,When,When,La description 'Date de moissonnage de la notice' fait référence à une date ou une période.
+palissy,DMAJ,Date de dernière modification de la notice,When,When,When,La description 'Date de dernière modification de la notice' fait référence à une date ou une période.
+palissy,NOMS,Rédacteur de la notice,Who,What,What,"Par défaut, la description 'Rédacteur de la notice' est associée à 'What' (objet/référence)."
+palissy,COPY,Mentions légales,Who,What,What,"Par défaut, la description 'Mentions légales' est associée à 'What' (objet/référence)."
+palissy,REFA,Référence Mérimée de l'édifice,What,What,What,"La description 'Référence Mérimée de l'édifice' fait référence à un objet, un titre ou une référence."
+palissy,REFMUS,Référence Muséofile associée,What,What,What,"La description 'Référence Muséofile associée' fait référence à un objet, un titre ou une référence."
+palissy,REFJOC,Référence Joconde associée,What,What,What,"La description 'Référence Joconde associée' fait référence à un objet, un titre ou une référence."
+palissy,RENV,Renvoi vers un autre producteur Palissy,Who,Who,Who,La description 'Renvoi vers un autre producteur Palissy' fait référence à une personne ou un acteur.
+palissy,REFP,Référence Palissy des parties constituantes étudiées,What,What,What,"La description 'Référence Palissy des parties constituantes étudiées' fait référence à un objet, un titre ou une référence."
+palissy,REFE,Référence Palissy de l'ensemble,What,What,What,"La description 'Référence Palissy de l'ensemble' fait référence à un objet, un titre ou une référence."
+palissy,REG,Région au moment de la protection ou de l’étude,Where,Where,Where,La description 'Région au moment de la protection ou de l’étude' fait référence à un lieu ou une localisation.
+palissy,DPT_LETTRE,Département en lettres au moment de la protection ou de l’étude,Where,Where,Where,La description 'Département en lettres au moment de la protection ou de l’étude' fait référence à un lieu ou une localisation.
+palissy,COM,Commune au moment de la protection ou de l’étude,Where,Where,Where,La description 'Commune au moment de la protection ou de l’étude' fait référence à un lieu ou une localisation.
+palissy,WCOM,Commune pour l'affichage,Where,Where,Where,La description 'Commune pour l'affichage' fait référence à un lieu ou une localisation.
+palissy,ADRS,Adresse de l'édifice,Where,Where,Where,La description 'Adresse de l'édifice' fait référence à un lieu ou une localisation.
+palissy,WADRS,Adresse pour l'affichage,Where,Where,Where,La description 'Adresse pour l'affichage' fait référence à un lieu ou une localisation.
+palissy,EDIF,Nom de l'édifice au moment de la protection ou de l’étude,What,What,What,"La description 'Nom de l'édifice au moment de la protection ou de l’étude' fait référence à un objet, un titre ou une référence."
+palissy,custom_PRODUCTEUR_LABEL,Producteur,Who,Who,Who,La description 'Producteur' fait référence à une personne ou un acteur.
+palissy,custom_LOCA,Localisation,Where,Where,Where,La description 'Localisation' fait référence à un lieu ou une localisation.
+joconde,REF,Référence de la notice,What,What,What,"La description 'Référence de la notice' fait référence à un objet, un titre ou une référence."
+joconde,DOMN,Domaine,"What, Why",What,What,"Par défaut, la description 'Domaine' est associée à 'What' (objet/référence)."
+joconde,INV,Numéro d'inventaire,What,Where,Where,La description 'Numéro d'inventaire' fait référence à un lieu ou une localisation.
+joconde,MUSEO,Lien Muséofile,What,What,What,"Par défaut, la description 'Lien Muséofile' est associée à 'What' (objet/référence)."
+joconde,STAT,Statut juridique,What,What,What,"Par défaut, la description 'Statut juridique' est associée à 'What' (objet/référence)."
+joconde,DENO,Dénomination,What,What,What,"La description 'Dénomination' fait référence à un objet, un titre ou une référence."
+joconde,APPL,Appellation,What,What,What,"La description 'Appellation' fait référence à un objet, un titre ou une référence."
+joconde,TITR,Titre,What,What,What,"La description 'Titre' fait référence à un objet, un titre ou une référence."
+joconde,AUTR,Auteur,Who,Who,Who,La description 'Auteur' fait référence à une personne ou un acteur.
+joconde,ROLE,Rôle,Who,What,What,"Par défaut, la description 'Rôle' est associée à 'What' (objet/référence)."
+joconde,PAUT,Précisions sur l'auteur,Who,Who,Who,La description 'Précisions sur l'auteur' fait référence à une personne ou un acteur.
+joconde,GENRE,Genre du ou des auteurs,Who,Who,Who,La description 'Genre du ou des auteurs' fait référence à une personne ou un acteur.
+joconde,ECOL,École (pays),Where,What,What,"Par défaut, la description 'École (pays)' est associée à 'What' (objet/référence)."
+joconde,ATTR,Anciennes attributions,Who,Why,What,La description 'Anciennes attributions' fait référence à une raison ou une motivation.
+joconde,PERI,Période de création,When,When,When,La description 'Période de création' fait référence à une date ou une période.
+joconde,MILL,Millésime de création,When,What,What,"Par défaut, la description 'Millésime de création' est associée à 'What' (objet/référence)."
+joconde,EPOQ,Époque,When,What,What,"Par défaut, la description 'Époque' est associée à 'What' (objet/référence)."
+joconde,MILU,Millésime d'utilisation,When,What,What,"Par défaut, la description 'Millésime d'utilisation' est associée à 'What' (objet/référence)."
+joconde,PEOC,Période de l'original copié,When,When,When,La description 'Période de l'original copié' fait référence à une date ou une période.
+joconde,GENE,Genèse,When,What,What,"Par défaut, la description 'Genèse' est associée à 'What' (objet/référence)."
+joconde,HIST,Historique,When,What,What,"Par défaut, la description 'Historique' est associée à 'What' (objet/référence)."
+joconde,LIEUX,Lieu de création / utilisation,Where,Where,Where,La description 'Lieu de création / utilisation' fait référence à un lieu ou une localisation.
+joconde,PLIEUX,"Précisions sur le lieu de création, d'exécution ou d'utilisation",Where,Where,Where,"La description 'Précisions sur le lieu de création, d'exécution ou d'utilisation' fait référence à un lieu ou une localisation."
+joconde,GEOHI,Lieu historique,Where,Where,Where,La description 'Lieu historique' fait référence à un lieu ou une localisation.
+joconde,LOCA_PROV,Provenance du bien,Where,What,What,"Par défaut, la description 'Provenance du bien' est associée à 'What' (objet/référence)."
+joconde,PERU,Période d'utilisation,When,When,When,La description 'Période d'utilisation' fait référence à une date ou une période.
+joconde,DECV,Découverte / collecte,When,What,What,"Par défaut, la description 'Découverte / collecte' est associée à 'What' (objet/référence)."
+joconde,PDEC,Précisions sur la découverte ou la collecte,When,What,What,"Par défaut, la description 'Précisions sur la découverte ou la collecte' est associée à 'What' (objet/référence)."
+joconde,UTIL,Utilisation / destination,Why,What,What,"Par défaut, la description 'Utilisation / destination' est associée à 'What' (objet/référence)."
+joconde,PUTI,Précisions sur l'utilisation,Why,What,What,"Par défaut, la description 'Précisions sur l'utilisation' est associée à 'What' (objet/référence)."
+joconde,TECH,Matériaux et techniques,How,How,How,La description 'Matériaux et techniques' fait référence à une méthode ou un processus.
+joconde,DIMS,Mesures,What,What,What,"Par défaut, la description 'Mesures' est associée à 'What' (objet/référence)."
+joconde,INSC,Inscriptions,What,What,What,"Par défaut, la description 'Inscriptions' est associée à 'What' (objet/référence)."
+joconde,PINS,Précisions sur les inscriptions,What,What,What,"Par défaut, la description 'Précisions sur les inscriptions' est associée à 'What' (objet/référence)."
+joconde,ONOM,Onomastique,What,What,What,"La description 'Onomastique' fait référence à un objet, un titre ou une référence."
+joconde,DESC,Description,What,What,What,"Par défaut, la description 'Description' est associée à 'What' (objet/référence)."
+joconde,REPR,Sujet représenté,What,What,What,"Par défaut, la description 'Sujet représenté' est associée à 'What' (objet/référence)."
+joconde,PREP,Précisions sur le sujet représenté,What,What,What,"Par défaut, la description 'Précisions sur le sujet représenté' est associée à 'What' (objet/référence)."
+joconde,DREP,Date du sujet représenté,When,When,When,La description 'Date du sujet représenté' fait référence à une date ou une période.
+joconde,SREP,Source de la représentation,Who,What,What,"Par défaut, la description 'Source de la représentation' est associée à 'What' (objet/référence)."
+joconde,DACQ,Date d'acquisition,When,When,When,La description 'Date d'acquisition' fait référence à une date ou une période.
+joconde,APTN,Anciennes appartenances,Who,What,What,"Par défaut, la description 'Anciennes appartenances' est associée à 'What' (objet/référence)."
+joconde,DEPO,Lieu de dépôt,Where,Where,Where,La description 'Lieu de dépôt' fait référence à un lieu ou une localisation.
+joconde,DDPT,Date de dépôt,When,When,When,La description 'Date de dépôt' fait référence à une date ou une période.
+joconde,ADPT,Ancien dépôt,Where,What,What,"Par défaut, la description 'Ancien dépôt' est associée à 'What' (objet/référence)."
+joconde,DATION,Dation,When,What,What,"Par défaut, la description 'Dation' est associée à 'What' (objet/référence)."
+joconde,MANQUANT,Situation particulière,What,What,What,"Par défaut, la description 'Situation particulière' est associée à 'What' (objet/référence)."
+joconde,MANQUANT_COM,Précisions sur une situation particulière,What,What,What,"Par défaut, la description 'Précisions sur une situation particulière' est associée à 'What' (objet/référence)."
+joconde,COMM,Commentaires,What,Where,Where,La description 'Commentaires' fait référence à un lieu ou une localisation.
+joconde,EXPO,Exposition,"Where, Who",What,What,"Par défaut, la description 'Exposition' est associée à 'What' (objet/référence)."
+joconde,BIBL,Bibliographie,What,What,What,"Par défaut, la description 'Bibliographie' est associée à 'What' (objet/référence)."
+joconde,DMIS,Date de création,When,When,When,La description 'Date de création' fait référence à une date ou une période.
+joconde,DMOIS,Date de moissonnage de la notice,When,When,When,La description 'Date de moissonnage de la notice' fait référence à une date ou une période.
+joconde,DMAJ,Date de mise à jour,When,When,When,La description 'Date de mise à jour' fait référence à une date ou une période.
+joconde,REDA,Rédacteur de la notice,Who,What,What,"Par défaut, la description 'Rédacteur de la notice' est associée à 'What' (objet/référence)."
+joconde,PHOT,Crédits photographiques,Who,What,Who,"Par défaut, la description 'Crédits photographiques' est associée à 'What' (objet/référence)."
+joconde,DATA,Artiste sous droits,Who,What,Who,"Par défaut, la description 'Artiste sous droits' est associée à 'What' (objet/référence)."
+joconde,LOCA3,Année d'entrée dans le domaine public,When,When,When,La description 'Année d'entrée dans le domaine public' fait référence à une date ou une période.
+joconde,IA,Droits de reproduction et de représentation,What,What,Who,"Par défaut, la description 'Droits de reproduction et de représentation' est associée à 'What' (objet/référence)."
+joconde,REFPAL,Références Palissy liées,What,What,What,"La description 'Références Palissy liées' fait référence à un objet, un titre ou une référence."
+joconde,REFMEM,Références Mémoire liées,What,What,What,"La description 'Références Mémoire liées' fait référence à un objet, un titre ou une référence."
+joconde,REFMER,Références Mérimée liées,What,What,What,"La description 'Références Mérimée liées' fait référence à un objet, un titre ou une référence."
+joconde,REGION,Région,Where,Where,Where,La description 'Région' fait référence à un lieu ou une localisation.
+joconde,DPT,Département,Where,Where,Where,La description 'Département' fait référence à un lieu ou une localisation.
+joconde,VILLE_M,Ville,Where,What,Where,"Par défaut, la description 'Ville' est associée à 'What' (objet/référence)."
+joconde,NOMOFF,Nom du musée,Where,What,What,"La description 'Nom du musée' fait référence à un objet, un titre ou une référence."
+joconde,LOCA,Localisation,Where,Where,Where,La description 'Localisation' fait référence à un lieu ou une localisation.
+joconde,custom_LOCA,Lieu de conservation,Where,Where,Where,La description 'Lieu de conservation' fait référence à un lieu ou une localisation.

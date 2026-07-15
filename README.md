@@ -41,39 +41,39 @@ More info here : https://packaging.python.org/en/latest/guides/installing-using-
 
 ### Environment
 
-A .env file needs to be created to define the arangoDB adress and credentials. An example can be found in the `.env-BOILERPLATE` file.
+A .env file needs to be created to define the arangoDB adress and credentials. An example can be found in the `.env-BOILERPLATE` file. Optional variable allow for choosing what type of information will be imported in the database. For example you could set only `THESO_CONFIG` and `POP_DATA_LOCATION` to create a database with only those information. Unset variables will be skipped.
 
 ```dotenv
+#Mandatory
 DB_ADDRESS="http://localhost:8529"
 DB_NAME="NAME"
 DB_USER="USERNAME"
 DB_PASSWORD="PASSWORD"
+#Optional
+THESO_CONFIG="config/config-thesaurus-xp.json"
+GRAPH_CONFIG="config/config-graph-xp.json"
+POP_DATA_LOCATION="data/POP"
+DUMP_FOLDER="data/DumpArango"
+CLEANUP=true
+COLL_TO_ADD_WEIGHTS_TO="FOO"
 ```
 
 ## Usage
-Here is a list of all the available options
+Here is a description of each environment variables
 
-| Argument              | Description                                                                       | Example                                   |
-|-----------------------|-----------------------------------------------------------------------------------|-------------------------------------------|
-| --thesaurus-config    | The path to the thesaurus fetching configuration file                             | --thesaurus-config config/thesarauri.json |
-| --graph-config        | The path to the graph creation configuration file                                 | --graph-config config/graphs.json         |
-| --cleanup             | A boolean definining if a full db cleanup needs to be perfomed (default is false) | --cleanup True                            |
-| --dump-path           | The path to the graph creation configuration file                                 | --dump-path path/to/dump                  |
-| --add-weights-to-coll | An existing weight collection, where default weights will be added                | --add-weights-to-coll th15_relations      |
+| Variable               | Description                                                        | Example              |
+|------------------------|--------------------------------------------------------------------|----------------------|
+| THESO_CONFIG           | The path to the thesaurus fetching configuration file              | config/thesauri.json |
+| GRAPH_CONFIG           | The path to the graph creation configuration file                  | config/graphs.json   |
+| POP_DATA_LOCATION      | The path to a folder containing POP data as CSV files              | data/pop             |
+| DUMP_FOLDER            | The path to the graph creation configuration file                  | path/to/dump         |
+| COLL_TO_ADD_WEIGHTS_TO | An existing weight collection, where default weights will be added | th15_relations       |
+| CLEANUP                | Whether or not to perform cleanup after import                     | true                 |
 
-
-example usage :
-- Creating a 
-```bash
-python3 src/main.py --graph-config [path-to-config]
-```
+With the correct .env file and if the requirements.txt has been used to set up the python virtual environment:
 
 ```bash
-python3 src/main.py --thesaurus-config [path-to-config] --cleanup True
-```
-
-```bash
-python3 src/main.py --dump-path path/to/dump
+python3 src/main.py
 ```
 
 ## Feature specific information
@@ -171,17 +171,32 @@ The dump impoter will populate a database using an arangoDB dump, contained in a
 of JSON files, in the arangoDB format, which can be obtained by fetching an arangoDB database.
 Its primary use is saving Database states for later use.
 
-It is used with the `--dump-path` options (see usage).
+It is used with the `DUMP_PATH` environment variable.
+
+### POP data importer
+
+Data used in experiments can be found in `data/POP`
+For the pop data to be importer correctly the folder needs to follow this template :
+
+```
+.
+├── joconde_ndp.csv
+├── key_desc_pairs.csv
+├── merimee_ndp.csv
+└── palissy_ndp.csv
+```
+
+The joconde, merimee and palissy csv files were extracted from https://pop.culture.gouv.fr/recherche, with the query "Notre dame de Paris", filtering each time for the given database/source.
 
 ## Roadmap
 
 - [x] [Opentheso](https://opentheso.hypotheses.org/introduction) to ArangoDB importer
 - [x] [Aioli](https://www.map.cnrs.fr/fr/recherche/projets/aioli/) to ArangoDB importer
   * It is covered by the dump importer, as Aiolï's API is not adapted to our use case
-- [ ] POP databases importer
-  - [ ] Merimee
-  - [ ] Palissy
-  - [ ] Joconde
+- [x] POP databases importer
+  - [x] Merimee
+  - [x] Palissy
+  - [x] Joconde
 
 ## License
 This work is licenced under GNU GPL v3.0
