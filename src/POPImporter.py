@@ -1,10 +1,7 @@
 import csv, os
-from dotenv import load_dotenv
 from arango import ArangoClient, database
 
-WORKDIR = os.getenv("POP_DATA_LOCATION")
-
-def fetch_alignment_dict(filename : str = "key_desc_pairs.csv") -> dict:
+def fetch_alignment_dict(filename : str) -> dict:
     """
     Fetches the alignment chart between each databases keys and W7 questions
 
@@ -24,7 +21,7 @@ def fetch_alignment_dict(filename : str = "key_desc_pairs.csv") -> dict:
         "joconde" : {}
     }
 
-    with open(f"{WORKDIR}/{filename}") as f:
+    with open(filename) as f:
         # header of csv file : source, key, description, W7
 
         reader = csv.DictReader(f) #allows us to retrieve via header instead of position in the line (much more resilient)
@@ -33,10 +30,12 @@ def fetch_alignment_dict(filename : str = "key_desc_pairs.csv") -> dict:
 
     return result
 
-def convert_POP_database(database: str,alignment: dict, filename : str):
+def convert_pop_database(pop_database: str, alignment: dict, filename : str):
     """
     Reads the palissy csv file, convert it to a W7 aligned arangoDB ready list of document.
 
+    :param pop_database: The POP database represented in the file at filename (Usually palissy, merimee or joconde)
+    :type pop_database: str
     :param alignment: A dictionnary created using `fetch_alignment_dict()` containing information about wich palissy key goes into which W7 question
     :type alignment: dict
     :param filename: The name of the csv file containing the palissy objects. Default is `palissy_ndp.csv`
@@ -63,14 +62,14 @@ def convert_POP_database(database: str,alignment: dict, filename : str):
         }
     Each W7 question encapsulate original key value pairs present in the palissy object along with the natural language description of it
     """
-    if database not in alignment.keys():
+    if pop_database not in alignment.keys():
         print("database not in alignment chart")
         return None
 
     result = []
     desc = {}
 
-    with (open(f"{WORKDIR}/{filename}") as f):
+    with (open(filename) as f):
         reader = csv.DictReader(f)
 
         for line in reader:
@@ -88,7 +87,7 @@ def convert_POP_database(database: str,alignment: dict, filename : str):
                     "WHAT": {}
                 }
                 for key in line:
-                    translation[alignment[database][key].split(',')[0]][key] = {
+                    translation[alignment[pop_database][key].split(',')[0]][key] = {
                         "description" : desc[key],
                         "value" : line[key]
                     }
@@ -111,18 +110,14 @@ def insert_into_arango(collection_name : str, documents : list):
 
     collection.insert_many(documents)
 
+def insert_and_align_palissy_merimee_joconde_data(workdir: str):
+    alignment_dict = fetch_alignment_dict(f"{workdir}/key_desc_pairs.csv")
 
-if __name__ == "__main__":
-    load_dotenv()
-    WORKDIR = os.getenv("POP_DATA_LOCATION")
-    alignment_dict = fetch_alignment_dict()
-
-    palissy = convert_POP_database("palissy", alignment_dict, "palissy_ndp.csv")
+    palissy = convert_pop_database("palissy", alignment_dict, f"{workdir}/palissy_ndp.csv")
     insert_into_arango("palissy", palissy)
 
-    merimee = convert_POP_database("merimee", alignment_dict, "merimee_ndp.csv")
+    merimee = convert_pop_database("merimee", alignment_dict, f"{workdir}/merimee_ndp.csv")
     insert_into_arango("merimee", merimee)
 
-    joconde = convert_POP_database("joconde", alignment_dict, "joconde_ndp.csv")
+    joconde = convert_pop_database("joconde", alignment_dict, f"{workdir}/joconde_ndp.csv")
     insert_into_arango("joconde", joconde)
-
