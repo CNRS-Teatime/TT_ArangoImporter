@@ -187,16 +187,36 @@ def generate_inter_thesauri_edges(db : database.StandardDatabase, all_nodes : li
 
 # These functions work on the raw import, which is much more detailed
 
-def create_thesaurus_dict(parsed_thesaurus : dict) -> list:
+def create_thesaurus_dict(parsed_thesaurus : dict, thesaurus_name : str) -> list:
     """
         Creates an arangoDB formated list of thesaurus entry, from the raw thesaurus fetched from openTheso. We use the URI's of each type of entry to figure out
         where the interesting data is in the raw thesaurus.
 
         :param parsed_thesaurus: Raw thesaurus, fetched from opentheso and parsed into a dict by the JSON library
         :type parsed_thesaurus: dict
+        :param thesaurus_name: Name of the current theraurus
         :returns: The list of documents created, that needs to be inserted into the ArangoDB collection. Each document being a thesaurus entry stored as a dict
     """
     thesaurus : list = []
+
+    #Appending the root node which is implied but not present in the data
+    thesaurus.append({
+            "_key": 'ndp' + thesaurus_name,
+            "labels": [{
+                "value" : thesaurus_name,
+                "lang" : "fr"
+            }],
+            "type": "Scheme",
+            "created": None,
+            "modified": None,
+            "description": None,
+            "ark": None,
+            "name": thesaurus_name,
+            "note": "Root node of this thesaurus",
+            "definition": None,
+        })
+
+    print(thesaurus)
 
     for entry in parsed_thesaurus:
         # Here we prepare the schema for each annotation
@@ -296,6 +316,20 @@ def create_thesaurus_relations(parsed_thesaurus : dict, thesaurus_name : str, we
                     "type" : "broader",
                     "weight" : weights['broader']
                 })
+        elif "http://www.w3.org/2004/02/skos/core#inScheme" in parsed_thesaurus[entry]:
+            relations_list.append({
+                "_from": thesaurus_name + '/ndp' + thesaurus_name,
+                "_to": to_key,
+                "type": "broader",
+                "weight": weights['inScheme']
+            })
+            relations_list.append({
+                "_from": to_key,
+                "_to": thesaurus_name + '/ndp' + thesaurus_name,
+                "type": "narrower",
+                "weight": weights['inScheme']
+            })
+
 
         if narrower in parsed_thesaurus[entry]:
             for relation in parsed_thesaurus[entry][narrower]:
@@ -345,7 +379,7 @@ def insert_raw_thesaurus(db : database.StandardDatabase, thesaurus : dict, name 
     edges_collection.truncate()
 
     theso_clean = {
-        "nodes": create_thesaurus_dict(thesaurus),
+        "nodes": create_thesaurus_dict(thesaurus, name),
         "relationships": create_thesaurus_relations(thesaurus, name, weights)
     }
 
@@ -371,7 +405,8 @@ def create_thesaurus_from_config(config_path : str, weights : dict = None):
             'broader' : 1,
             'related' : 3,
             'closeMatch' : 1.5,
-            'exactMatch' : 0
+            'exactMatch' : 0,
+            'inScheme': 15
         }
 
     # Here we prepare the database API
